@@ -24,14 +24,27 @@
 .contacts__button {
 	width: 301px;
 	height: 50px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	margin-bottom: 7px;
+	background: -webkit-gradient(linear, left top, right top, from(#FFECDA), to(#E8F2F6)), #FFECDA;
+	background: -o-linear-gradient(left, #FFECDA 0%, #E8F2F6 100%), #FFECDA;
 	background: linear-gradient(90deg, #FFECDA 0%, #E8F2F6 100%), #FFECDA;
 	border-radius: 11px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	cursor: pointer;
 }
 
 .contacts__buttonName {

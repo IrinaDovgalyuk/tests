@@ -1,0 +1,781 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=NotoSans:300,400,500,600" rel="stylesheet" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+		@import url(//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro);
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+		html {
+			-webkit-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+		}
+
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		.font-NotoSans {
+			font-family: 'Noto Sans', Arial, sans-serif !important;
+		}
+
+		.font-NotoSansJP {
+			font-family: 'Noto Sans JP', Arial, sans-serif !important;
+		}
+
+		.font-MyriadPro {
+			font-family: 'Myriad Pro', Arial, sans-serif !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		/*
+		.menu a {
+			color: #6c6c6c;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0.28px;
+			text-decoration: none;
+		}
+
+		.menu td {
+			padding-left: 30px;
+		}
+
+		.header-td {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		
+		
+		.blockqoute-td {
+			padding-top: 150px;
+			padding-bottom: 50px;
+		}
+
+		.block-table td {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		
+		.footer-td {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		.footer-menu-td {
+			padding-top: 60px;
+			padding-bottom: 35px;
+		}
+
+		.footer-menu-td a {
+			color: #bcc9dd;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0.36px;
+			text-decoration: none;
+		}
+
+		.copyright-td {
+			color: #bcc9dd;
+			font-size: 12px;
+			font-weight: 400;
+			letter-spacing: 0.31px;
+		}
+
+		.copyright-td a {
+			font-weight: 600;
+			text-decoration: none;
+			color: #bcc9dd;
+		}
+*/
+
+		@media (max-width: 870px) {
+			.table-640 {
+				width: 600px !important;
+			}
+
+			.table-600 {
+				width: 550px !important;
+			}
+
+			.block-table {
+				width: 200px !important;
+			}
+
+			.features-td td {
+				display: block !important;
+				margin-bottom: 15px !important;
+			}
+		}
+
+		@media (max-width: 620px) {
+			.table-640 {
+				width: 400px !important;
+			}
+
+			.table-600 {
+				width: 320px !important;
+			}
+
+			.block-td {
+				display: block !important;
+				margin-bottom: 20px !important;
+				padding: 0 !important;
+			}
+
+			.blockqoute-red {
+				background: #f6f6f4;
+			}
+
+			.user-block {
+				background: #ffffff;
+			}
+
+			.blockqoute-td tr {
+				display: block !important;
+			}
+
+			.block-table {
+				width: 320px !important;
+				display: block !important;
+				margin: 0 auto !important;
+			}
+
+			.author {
+				width: 200px !important;
+			}
+
+			.logo {
+				display: block !important;
+				margin: 0 auto !important;
+				text-align: center !important;
+				width: 200px !important;
+				margin-bottom: 20px !important;
+			}
+
+			.logo img {
+				margin: 0 auto !important;
+			}
+
+			.menu {
+				display: block !important;
+				margin: 0 auto !important;
+			}
+		}
+
+		@media (max-width: 420px) {
+			.table-640 {
+				width: 300px !important;
+			}
+
+			.table-600 {
+				width: 260px !important;
+			}
+
+			.block-table {
+				width: 260px !important;
+			}
+
+			.author {
+				width: 130px !important;
+			}
+
+			.blockqoute-td {
+				padding-top: 50px !important;
+				padding-bottom: 50px !important;
+			}
+
+			.footer-menu-td table {
+				width: 260px !important;
+			}
+
+			.menu td {
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+			}
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+		<tr>
+			<td>
+				<table class="table-640" cellpadding="0" cellspacing="0" width="640" align="center">
+					<tr>
+						<td height="30" width="640"></td>
+					</tr>
+					
+					<tr>
+						<td class="blockqoute-td" bgcolor="#000000" background="https://i.ibb.co/JrpZg8Z/Product-Desktop-2x.png" width="640px" valign="top">
+							<!--[if gte mso 9]>
+							  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:262px">
+								<v:fill type="tile" src="https://i.ibb.co/JrpZg8Z/Product-Desktop-2x.png" color="#000000" />
+								<v:textbox inset="0,0,0,0">
+							  <![endif]-->
+							<div>
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+									<tr>
+										<td class="block-td" align="left">
+											<table cellpadding="0" cellspacing="0" class="block-table" align="left" width="375">
+												<tr>
+													<td align="left">
+														<p style="font-size: 24px; font-family: 'Noto Sans', Arial, sans-serif; color: #cc0000; line-height: normal; text-align: left; font-weight: 600; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;" class="font-NotoSans">
+															Стиль. Страсть. Скорость.
+														</p>
+														<p style="font-size: 16px; font-family: 'Noto Sans', Arial, sans-serif; color: #ffffff; line-height: 1.38; text-align: left; font-weight: 300; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;" class="font-NotoSans">
+															Лимитированная серия IQOS 3&nbsp;Motor Edition, вдохновленная легендарной гонкой.
+														</p>														
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding-bottom: 10px;">
+														<p style="font-size: 16px; font-family: 'Noto Sans', Arial, sans-serif; color: #ffffff; line-height: 1.38; text-align: left; font-weight: 300; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;" class="font-NotoSans">
+															Яркий, лаконичный дизайн и&nbsp;внимание к&nbsp;каждой детали.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding-bottom: 10px;">
+														<table cellpadding="0" cellspacing="0" border="0" width="100%" align="left">
+															<tr>
+																<td width="96" height="39" bgcolor="cc0000" align="center">
+																	<div class="font-MyriadPro" style="line-height: 24px; font-size: 24px; color: #ffffff; font-family: 'Myriad Pro', Arial, sans-serif;">
+																		6 990 ₽
+																	</div>
+																</td>
+																<td style="padding-left: 10px;">
+																	<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/3FDc3QY/buy2-1x.png" alt="Купить" width="197" height="41" style="display: block; width:197px; height: 41px" border="0"></a>
+																</td>
+															</tr>
+															<tr>
+																<td width="96"> </td>
+																<td style="padding-left: 12px;">
+																	<p style="font-size: 12px; font-family: 'Myriad Pro', Arial, sans-serif; color: #ffffff; text-align: left; font-weight: normal; Margin:0; padding-top: 5px; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="font-MyriadPro">
+																		Товар доступен после авторизации*
+																	</p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td class="block-td" align="right">
+											<table cellpadding="0" cellspacing="0" class="block-table" align="right" width="225">
+												<tr>
+													<td align="right" class="block-td" valign="bottom">
+														<a href="https://www.iqos.ru/" target="_blank">
+															<img src="https://i.ibb.co/mvfQLcJ/device1-2-2x.png" alt="devices" width="225" height="262" style="display: block; width:225px; height: 262px" border="0">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+								</table>
+							</div>
+							<!--[if gte mso 9]>
+								</v:textbox>
+							  </v:rect>
+							  <![endif]-->
+						</td>
+					</tr>
+
+					<tr>
+						<td height="15" width="640" bgcolor="#ffffff"></td>
+					</tr>
+
+
+					<!--user blok-->
+
+					<tr>
+						<td class="blockqoute-td blockqoute-red" background="https://i.ibb.co/qspqZpR/CLUB-LOGO-2x-2.png" bgcolor="#ffffff" width="640" height="203" valign="top" style="background-size: cover;">
+							<!--[if gte mso 9]>
+							  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:203px;background-size: cover;">
+								<v:fill type="tile" src="https://i.ibb.co/qspqZpR/CLUB-LOGO-2x-2.png" color="#ffffff" />
+								<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+							  <![endif]-->
+							<div>
+								<table class="table-600" cellpadding="0" cellspacing="0" width="620" align="center">
+									<tr>
+										<td class="block-td" align="center" class="font-NotoSansJP" style="padding-top: 5px; padding-bottom: 10px;">
+											<p class="font-NotoSansJP" style="font-size: 18px; font-family: 'Noto Sans JP', Arial, sans-serif; color: #414042; text-align: center; font-weight: 100; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+												%%Имя%%,
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="block-td" align="center" class="font-NotoSans" style="padding-bottom: 20px;">
+											<p class="font-NotoSansJP" style="font-size: 20px; font-family: 'Noto Sans JP', Arial, sans-serif; color: #414042; text-align: center; font-weight: 200; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; line-height: normal">
+												эксклюзивные продажи устройств и&nbsp;аксессуаров из&nbsp;лимитированной серии для участников IQOS CLUB открыты уже сейчас, за&nbsp;две недели до&nbsp;старта официальных продаж
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="block-td" align="center" class="font-NotoSansJP" style=" padding-bottom: 20px;">
+											<p class="font-NotoSans" style="font-size: 16px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; text-align: center; font-weight: 400; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; line-height: normal">
+												Предложение ограничено
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="block-td" align="center" class="font-NotoSansJP">
+											<p class="font-NotoSans" style="font-size: 20px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; text-align: center; font-weight: 500; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; line-height: normal">
+												Только на&nbsp;сайте <a href="https://www.iqos.ru/" target="_blank" class="font-NotoSans" style="font-size: 20px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; text-align: center; font-weight: 500; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; line-height: normal">www.iqos.com</a>
+											</p>
+										</td>
+									</tr>
+
+								</table>
+							</div>
+							<!--[if gte mso 9]>
+								</v:textbox>
+							  </v:rect>
+							  <![endif]-->
+						</td>
+					</tr>
+
+					<!--user blok-->
+
+
+					<tr>
+						<td height="15" width="640" bgcolor="#ffffff"></td>
+					</tr>
+
+					<tr>
+						<td class="blockqoute-td blockqoute-red" background="https://i.ibb.co/n3gT4vw/red-border-2x2.jpg" bgcolor="#f6f6f4" width="640" valign="top" style="background-size: cover;">
+							<!--[if gte mso 9]>
+							  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;background-size: cover;">
+								<v:fill type="tile" src="https://i.ibb.co/n3gT4vw/red-border-2x2.jpg" color="#f6f6f4" />
+								<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+							  <![endif]-->
+							<div>
+								<table class="table-600" cellpadding="0" cellspacing="0" width="620" align="center">
+									<tr>
+										<td class="block-td" align="right">
+											<table cellpadding="0" cellspacing="0" class="block-table" align="right" width="320">
+												<!--
+												<tr>
+													<td height="15" width="100%" bgcolor="#f6f6f4"></td>
+												</tr>
+-->
+												<tr>
+													<td align="right" class="block-td" valign="bottom" style="padding-top: 15px">
+														<a href="https://www.iqos.ru/" target="_blank">
+															<img src="https://i.ibb.co/kxTctrz/device2-2x.png" alt="devices" width="273" height="369" style="display: block; width:273px; height: 369px" border="0">
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td class="block-td" align="left">
+											<table cellpadding="0" cellspacing="0" class="block-table" align="left" width="300">
+												<tr>
+													<td align="left">
+														<p style="font-size: 18px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 20px; padding-left: 0;" class="font-NotoSans">
+															Комплект
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding-bottom: 10px;">
+														<table>
+															<tr>
+																<td align="left" width="185">
+																	<p style="font-size: 18px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-left: 0; padding-bottom: 0" class="font-NotoSans">
+																		IQOS 3 Motor Edition
+																	</p>
+																</td>
+																<td align="left">
+																	<img src="https://i.ibb.co/2v0fh9D/plus.png" alt="+" width="22" height="22" style="display: block; width:22px; height: 22px" border="0">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left">
+														<p style="font-size: 18px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 25px; padding-left: 0;" class="font-NotoSans">
+															IQOS 3 Multi Motor Edition
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td style="padding-bottom: 10px;">
+														<table cellpadding="0" cellspacing="0" border="0" width="100%" align="left">
+															<tr>
+																<td style="padding-bottom: 10px;">
+																	<table cellpadding="0" cellspacing="0" border="0" width="100%" align="left">
+																		<tr>
+																			<td width="97" height="39" bgcolor="cc0000" align="center">
+																				<div class="font-MyriadPro" style="line-height: 24px; font-size: 24px; color: #ffffff; font-family: 'Myriad Pro', Arial, sans-serif;">
+																					11&nbsp;990&nbsp;₽
+																				</div>
+																			</td>
+																			<td style="padding-left: 10px;">
+																				<img src="https://i.ibb.co/VBCWM8X/old-price1.png" alt="old-price" width="98" height="18" style="display: block; width:90px; height: 18px" border="0">
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/3FDc3QY/buy2-1x.png" alt="Купить" width="197" height="41" style="display: block; width:197px; height: 41px" border="0"></a>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<p style="font-size: 12px; font-family: 'Myriad Pro', Arial, sans-serif; color: #414042; text-align: left; font-weight: normal; Margin:0; padding-top: 5px; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="font-MyriadPro">
+																		Товар доступен после авторизации*
+																	</p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+								</table>
+							</div>
+							<!--[if gte mso 9]>
+								</v:textbox>
+							  </v:rect>
+							  <![endif]-->
+						</td>
+					</tr>
+
+					<tr>
+						<td height="15" width="640" bgcolor="#ffffff"></td>
+					</tr>
+
+
+					<tr>
+						<td class="blockqoute-td" bgcolor="#1a1a1a">
+							<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+								<tr>
+									<td class="block-td" align="center">
+										<table cellpadding="0" cellspacing="0" class="block-table" align="right" width="300">
+											<tr>
+												<td height="36px">&nbsp;</td>
+											</tr>
+											<tr>
+												<td align="right" class="block-td" valign="bottom">
+													<a href="https://www.iqos.ru/" target="_blank">
+														<img src="https://i.ibb.co/7bpLNtH/devices2-2x.png" alt="devices" width="295" height="168" style="display: block; width:322px; height: 168px" border="0">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="block-td" align="left">
+										<table cellpadding="0" cellspacing="0" class="block-table" align="left" width="300">
+											<tr>
+												<td align="left" style="padding-bottom: 7px;">
+													<table cellpadding="0" cellspacing="0" class="block-table" align="left" width="300">
+														<tr>
+															<td width="185">
+																<p style="font-size: 18px; font-family: 'Noto Sans', Arial, sans-serif; color: #ffffff; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="font-NotoSans">
+																	IQOS 3 Motor Edition
+																</p>
+															</td>
+															<td align="left">
+																<img src="https://i.ibb.co/2v0fh9D/plus.png" alt="+" width="22" height="22" style="display: block; width:22px; height: 22px" border="0">
+															</td>
+
+														</tr>
+													</table>
+
+												</td>
+											</tr>
+											<tr>
+												<td align="left">
+													<p style="font-size: 18px; font-family: 'Noto Sans', Arial, sans-serif; color: #ffffff; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 15px; padding-left: 0;" class="font-NotoSans">
+														панель для IQOS 3 Motor Edition
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding-bottom: 10px;">
+													<table cellpadding="0" cellspacing="0" border="0" width="100%" align="left">
+														<tr>
+															<td width="96" height="39" bgcolor="cc0000" align="center">
+																<div class="font-MyriadPro" style="line-height: 24px; font-size: 24px; color: #ffffff; font-family: 'Myriad Pro', Arial, sans-serif;">
+																	7 990 ₽
+																</div>
+															</td>
+															<td style="padding-left: 10px;">
+																<img src="https://i.ibb.co/x7PL2xf/old-price2.png" alt="old-price" width="90" height="18" style="display: block; width:90px; height: 18px" border="0">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/3FDc3QY/buy2-1x.png" alt="Купить" width="197" height="41" style="display: block; width:197px; height: 41px" border="0"></a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="font-size: 12px; font-family: 'Myriad Pro', Arial, sans-serif; color: #ffffff; text-align: left; font-weight: normal; Margin:0; padding-top: 5px; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="font-MyriadPro">
+														Товар доступен после авторизации*
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td height="10px" bgcolor="#ffffff">&nbsp;</td>
+					</tr>
+					<tr bgcolor="#000000">
+						<td class="features-td" bgcolor="#000000" background="https://i.ibb.co/NmfY47S/e-com2-2x.png" width="640" height="319" valign="top">
+							<!--[if gte mso 9]>
+							  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:319px;">
+								<v:fill type="tile" src="https://i.ibb.co/NmfY47S/e-com2-2x.png" color="#000000" />
+								<v:textbox inset="0,0,0,0">
+							  <![endif]-->
+							<div>
+
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+									<tr>
+										<td height="30px">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>
+											<p style="font-size: 18px; font-family: 'Roboto', Arial, sans-serif; color: #ffffff; line-height: normal; text-align: center; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+												Воспользуйтесь всеми преимуществами<br /> заказа на&nbsp;<a href="https://www.iqos.ru/" target="_blank" style="font-size: 18px; font-family: 'Roboto', Arial, sans-serif; color: #ffffff; line-height: normal; text-align: center; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">iqos.com</a>
+
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="17px">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>
+											<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+												<tr>
+													<td align="center">
+														<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/4gRQxdB/group1-2x.png" alt="group1" height="75" width="75" style="display: block; width:75px; height: 75px;" /></a>
+														<p style="font-size: 14px; font-family: 'Roboto', Arial, sans-serif; color: #ffffff; line-height: normal; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 34px; padding-left: 0;">
+															Бесплатная доставка <br />от 2990 рублей
+														</p>
+													</td>
+													<td align="center">
+														<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/ZWY6whg/free-2x.png" alt="free" height="75" width="75" style="display: block; width:75px; height: 75px;" /></a>
+														<p style="font-size: 14px; font-family: 'Roboto', Arial, sans-serif; color: #ffffff; line-height: normal; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 34px; padding-left: 0;">
+															Доставка в день заказа<br />или на следующий день**
+														</p>
+													</td>
+													<td align="center">
+														<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/DWT46ht/group3-2x.png" alt="group3" height="75" width="75" style="display: block; width:75px; height: 75px;" /></a>
+														<p style="font-size: 14px; font-family: 'Roboto', Arial, sans-serif; color: #ffffff; line-height: normal; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 20px; padding-left: 0;">
+															Уникальное предложение<br /> доступны только при<br /> заказе на <a href="https://www.iqos.ru/" target="_blank" style="font-size: 14px; font-family: 'Roboto', Arial, sans-serif; color: #ffffff; line-height: normal; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 20px; padding-left: 0;">iqos.com</a>
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/kJxqP4L/buy-3-2x.jpg" alt="Купить" width="280" height="40" style="display: block; width:280px; height: 40px" border="0"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20px">&nbsp;</td>
+									</tr>
+								</table>
+							</div>
+							<!--[if gte mso 9]>
+								</v:textbox>
+							  </v:rect>
+							  <![endif]-->
+						</td>
+					</tr>
+					<tr>
+						<td height="10px" bgcolor="#ffffff">&nbsp;</td>
+					</tr>
+
+
+
+
+					<tr>
+						<td class="blockqoute-td" bgcolor="#f6f6f4">
+							<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+								<tr>
+									<td class="block-td" align="center">
+										<table cellpadding="0" cellspacing="0" class="block-table" align="right" width="253">
+											<tr>
+												<td height="10px" bgcolor="#f6f6f4">&nbsp;</td>
+											</tr>
+											<tr>
+												<td align="right" class="block-td">
+													<a href="https://www.iqos.ru/" target="_blank">
+														<img src="https://i.ibb.co/s18sYHp/IPhone-X-2x.png" alt="IPhone-X-2x" width="242" height="277" style="display: block; width:242px; height: 277px" border="0">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="block-td" align="left" style="padding-left: 15px;">
+										<table cellpadding="0" cellspacing="0" class="block-table" align="left" width="348">
+											<tr>
+												<td align="left" style="padding-top: 30px;padding-bottom: 25px;">
+													<p style="font-size: 20px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1; text-align: left; font-weight: 500; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 18px; padding-left: 0;" class="font-NotoSans">
+														IQOS CLUB в Вашем кармане
+													</p>
+													<p style="font-size: 16px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1.38; text-align: left; font-weight: 200; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 15px; padding-left: 0;" class="font-NotoSans">
+														Привилегии и&nbsp;код рекомендаций<br /> всегда под рукой
+													</p>
+													<p style="font-size: 16px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1.38; text-align: left; font-weight: 200; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="font-NotoSans">
+														Установите электронную карту<br /> лояльности на&nbsp;Ваш смартфон<br /> и&nbsp;получите <b>100 баллов в&nbsp;IQOS CLUB</b>
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td align="left">
+													<table cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="block-td" style="Margin:0; padding-top: 0; padding-right: 30px; padding-bottom: 0px; padding-left: 0;">
+																<table cellpadding="0" cellspacing="0" valign="middle">
+																	<tr>
+																		<td style="Margin:0; padding-top: 0; padding-right: 10px; padding-bottom: 0px; padding-left: 0;">
+																			<a href="https://www.iqos.ru/" target="_blank">
+																				<img src="https://i.ibb.co/RNtsCDc/icon-android-2x.png" alt="icon-android" width="29" height="35" style="display: block; width:29px; height: 35px" border="0">
+																			</a>
+																		</td>
+																		<td align="center" valign="middle">
+																			<p style="font-size: 16px; font-family: 'Verdana', Arial, sans-serif; color: #646464; line-height: 1.19; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+																				Добавить<br /> в <a href="https://www.iqos.ru/" target="_blank" style="font-size: 16px; font-family: 'Verdana', Arial, sans-serif; color: #646464; line-height: 1.19; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">PassWallet</a>
+																			</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td class="block-td">
+																<table cellpadding="0" cellspacing="0" valign="middle">
+																	<tr>
+																		<td style="Margin:0; padding-top: 0; padding-right: 10px; padding-bottom: 0px; padding-left: 0;">
+																			<a href="https://www.iqos.ru/" target="_blank">
+																				<img src="https://i.ibb.co/FVNxkfb/icon-apple-2x.png" alt="icon-apple" width="29" height="35" style="display: block; width:29px; height: 34px" border="0">
+																			</a>
+																		</td>
+																		<td align="center" valign="middle">
+																			<p style="font-size: 16px; font-family: 'Verdana', Arial, sans-serif; color: #646464; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+																				Добавить<br /> в <a href="https://www.iqos.ru/" target="_blank" style="font-size: 16px; font-family: 'Verdana', Arial, sans-serif; color: #646464; line-height: 1; text-align: left; font-weight: normal; Margin:0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">Wallet</a>
+																			</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#f6f6f4">
+							<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+								<tr>
+									<td>
+										<img src="https://i.ibb.co/WxcHMXg/Rectangle62-2x.png" alt="line" width="507" height="1" style="display: block; width:507px; height: 1px" border="0">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="35px" bgcolor="#f6f6f4">&nbsp;</td>
+					</tr>
+
+
+
+					<tr>
+						<td class="features-td" bgcolor="#f6f6f4">
+							<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+								<tr>
+									<td align="center">
+										<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/5v9pmwT/Object-2x.png" alt="mobile" height="53" width="31" /></a>
+										<p style="font-size: 14px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1.29; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 25px; padding-left: 0;" class="font-NotoSans">
+											Имейте постоянный<br />доступ к коду<br />рекомендаций
+										</p>
+									</td>
+									<td align="center">
+										<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/1GNqr11/Object2-2x.png" alt="iqos" height="53" width="57" /></a>
+										<p style="font-size: 14px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1.29; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 25px; padding-left: 0;" class="font-NotoSans">
+											Получайте баллы за покупки<br />в одно касание в <a href="" class="font-NotoSans" style="font-size: 14px; font-family: 'Noto Sans', Arial, sans-serif;; color: #414042; line-height: 1; text-align: center; font-weight: 300;">фирменных<br />магазинах IQOS</a>
+										</p>
+									</td>
+									<td align="center">
+										<a href="https://www.iqos.ru/" target="_blank"><img src="https://i.ibb.co/pPrVQXj/Object3-2x.png" alt="star" height="53" width="42" /></a>
+										<p style="font-size: 14px; font-family: 'Noto Sans', Arial, sans-serif; color: #414042; line-height: 1.29; text-align: center; font-weight: 300; Margin:0; padding-top: 10px; padding-right: 0; padding-bottom: 25px; padding-left: 0;" class="font-NotoSans">
+											Отслеживайте<br /> актуальный статус,<br /> баллы и привилегии
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr>
+						<td height="30" width="640"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body></html>
+
+
+

@@ -1,0 +1,152 @@
+.promoMob {
+	border: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.promoMob__link {}
+
+.promoMob__img {
+	width: 100%;
+}
+
+.promoDesk {
+	display: none;
+}
+
+@media only screen and (min-width: 960px) {
+	.promoMob {
+		display: none;
+	}
+
+	.promoDesk {
+		display: block;
+		position: fixed;
+		right: 0;
+		z-index: 100;
+	}
+
+	.promoDesk__container {
+		width: 182.6px;
+		height: 322.2px;
+		border: solid 1px #e4eded;
+		background-color: #fff;
+		border-bottom-right-radius: 50px;
+		border-top-left-radius: 50px;
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center
+			;
+		    -ms-flex-align: center
+			;
+		        align-items: center
+			;
+	}
+
+	.promoDesk__close {
+		position: absolute;
+		top: 21px;
+		right: 18px;
+		cursor: pointer;
+	}
+
+	.promoDesk__closeImg {
+		height: 13px;
+		width: 13px;
+	}
+
+	.promoDesk__product {
+		position: absolute;
+		top: -106px;
+		right: 0;
+	}
+
+	.promoDesk__productImg {
+		width: 107px;
+		height: 214px;
+	}
+
+	.promoDesk__action {
+		margin-top: 101px;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.83;
+		text-align: left;
+		color: #fff;
+		padding: 4px 19.1px 5.3px 19px;
+		background-color: #e468a2;
+		width: 81.1px;
+		height: 24.3px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		z-index: 2;		
+		border-bottom-right-radius: 12px;
+		border-top-left-radius: 12px;
+	}
+
+	.promoDesk__title {
+		margin: 14px 0 4.5px;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1.33;
+		text-align: center;
+		color: #181818;
+	}
+
+	.promoDesk__price {
+		margin: 0;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: center;
+		color: #181818;
+	}
+
+	.promoDesk__price_number {
+		font-size: 28px;
+		color: #000;
+	}
+
+	.promoDesk__price_rub {
+		font-size: 22px;
+		color: #000;
+	}
+
+	.promoDesk__subTitle {
+		margin: 8.8px 0 13.7px;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 1.42;
+		text-align: center;
+		color: #546264;
+	}
+
+	.promoDesk__buy,
+	.promoDesk__link {
+		margin: 0;
+		padding-bottom: 21px;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.88;
+		text-align: center;
+		color: #181818;
+		text-transform: uppercase;
+	}
+
+}
